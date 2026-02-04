@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grammy Awards 2026 | Billie Eilish</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #93f5ff; /* Soft Cyan/Silver */
+      --bg: #050b14;    /* Deep Midnight Blue */
+      --card-bg: #0d1624; /* Muted Navy */
+      --text: #e0e6ed;
+      --border: #1e2d40;
+      --glow: rgba(147, 245, 255, 0.15);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      overflow-x: hidden;
+      /* Subtle texture for a non-AI look */
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    }
+
+    h1, h2, h3 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; }
+
+    /* Animated background glow */
+    .glow-blob {
+      position: fixed;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, var(--glow) 0%, rgba(5,11,20,0) 70%);
+      top: -150px; left: -150px;
+      z-index: -1;
+    }
+
+    header {
+      padding: 120px 0 80px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #0a121e 0%, var(--bg) 100%);
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 12vw, 8.5rem);
+      line-height: 0.8;
+      letter-spacing: -4px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    /* --- Accordion Refinement --- */
+    .accordion-item {
+      background-color: var(--card-bg) !important;
+      border: 1px solid var(--border) !important;
+      margin-bottom: 20px;
+      border-radius: 12px !important;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .accordion-item:hover {
+      border-color: var(--accent) !important;
+      transform: translateY(-2px);
+    }
+
+    .accordion-button {
+      background-color: transparent !important;
+      color: var(--text) !important;
+      padding: 25px;
+      font-weight: 700;
+      box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: var(--accent) !important;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .accordion-button::after { filter: invert(1) hue-rotate(180deg); }
+
+    /* --- Images --- */
+    .img-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .img-wrap img {
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      filter: saturate(0.8);
+    }
+
+    .img-wrap:hover img {
+      transform: scale(1.08);
+      filter: saturate(1.1);
+    }
+
+    /* --- Sticky Sidebar Card --- */
+    .bento-sidebar {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 35px;
+      position: sticky;
+      top: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .status-tag {
+      background: var(--accent);
+      color: #050b14;
+      padding: 5px 15px;
+      border-radius: 4px;
+      font-weight: 900;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .audio-player-ui {
+      background: rgba(255,255,255,0.03);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      opacity: 0.6;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="glow-blob"></div>
+
+<header>
+  <div class="container text-center">
+    <span class="status-tag mb-4 d-inline-block">2026 Archive</span>
+    <h1 class="hero-title">BLUE<br><span style="color:var(--accent)">WILDFLOWER</span></h1>
+    <p class="opacity-50 mt-4" style="letter-spacing: 2px;">THE 68TH ANNUAL GRAMMY AWARDS RECAP</p>
+  </div>
+</header>
+
+<div class="container my-5 pb-5">
+  <div class="row g-5">
+    
+    <div class="col-lg-7">
+      <h3 class="mb-4" style="font-size: 1rem; letter-spacing: 3px; color: var(--accent);">// SELECTIONS</h3>
+      
+      <div class="accordion" id="mainAcc">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sec1">
+              01 GALLERY VISUALS
+            </button>
+          </h2>
+          <div id="sec1" class="accordion-collapse collapse show" data-bs-parent="#mainAcc">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="img-wrap"><img src="https://i.pinimg.com/736x/63/49/34/6349344bad1a52b3f78446309a5747de.jpg" class="w-100"></div>
+                </div>
+                <div class="col-6">
+                  <div class="img-wrap"><img src="https://i.pinimg.com/736x/c2/15/3c/c2153c3f578ad89e9cd5bd083eed317f.jpg" class="w-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sec2">
+              02 SOUNDSCAPE
+            </button>
+          </h2>
+          <div id="sec2" class="accordion-collapse collapse" data-bs-parent="#mainAcc">
+            <div class="accordion-body">
+              <div class="audio-player-ui">
+                <p class="small text-uppercase fw-bold opacity-50 mb-3">Now Streaming: Wildflower</p>
+                <audio id="wildAudio" class="w-100" controls autoplay muted loop>
+                   <source src="ICT/lissa_-_wildflower_billie_(mp3.pm).mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sec3">
+              03 RECOGNITION
+            </button>
+          </h2>
+          <div id="sec3" class="accordion-collapse collapse" data-bs-parent="#mainAcc">
+            <div class="accordion-body">
+              <ul class="list-unstyled m-0">
+                <li class="pb-3 mb-3 border-bottom border-secondary d-flex justify-content-between">
+                  <span class="text-primary">Record of the Year</span> <span class="text-white fw-bold">WINNER</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <span class="text-primary">Album of the Year</span> <span class="text-white fw-bold">WINNER</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="bento-sidebar">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="m-0" style="font-size: 0.9rem;">PROGRAM NOTES</h4>
+          <div id="audioStatus" class="small fw-bold opacity-50">AUDIO MUTED</div>
+        </div>
+        <div class="img-wrap mb-4" style="height:320px;">
+          <img src="https://i.pinimg.com/1200x/f7/8f/14/f78f1422b98d45e66f0367c3f0bf5adb.jpg" class="w-100 h-100" style="object-fit:cover;">
+        </div>
+        <p class="opacity-75 small">Billie Eilish's performance of "Wildflower" utilized a 40-piece live orchestra, marking a tonal shift in her live production style for the 2026 circuit.</p>
+        <div class="mt-4 pt-4 border-top border-secondary">
+           <p class="small text-uppercase opacity-50 m-0">ICT Activity / Feb 2026</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2026 RECORDING ACADEMY ARCHIVE • TAP TO ENABLE SOUND
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const aud = document.getElementById('wildAudio');
+  const stat = document.getElementById('audioStatus');
+
+  document.body.addEventListener('click', () => {
+    if (aud.muted) {
+      aud.muted = false;
+      aud.play();
+      stat.style.color = "var(--accent)";
+      stat.innerText = "PLAYING NOW";
+      stat.style.opacity = "1";
+    }
+  }, { once: true });
+</script>
+
+</body>
+</html>
